@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalle de Obra | Yeimy Rose</title>
+    <style>
+      /* Estilos heredados del portafolio original */
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400&display=swap");
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        background: #fdf8f2;
+        color: #2a1f1a;
+        overflow-x: hidden;
+      }
+
+      /* Decoración de fondo */
+      .blob {
+        position: absolute;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: -1;
+      }
+      .blob-det {
+        width: 400px;
+        height: 400px;
+        background: #f4a261;
+        opacity: 0.1;
+        top: -100px;
+        right: -100px;
+      }
+
+      /* Estructura del detalle */
+      .detail-container {
+        max-width: 1000px;
+        margin: 4rem auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+        align-items: center;
+      }
+
+      @media (max-width: 768px) {
+        .detail-container {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+          margin: 2rem auto;
+        }
+      }
+
+      .artwork-frame {
+        background: #fff;
+        padding: 20px;
+        box-shadow: 0 15px 35px rgba(42, 31, 26, 0.1);
+        border-radius: 4px;
+      }
+
+      .artwork-frame img {
+        width: 100%;
+        display: block;
+        border-radius: 2px;
+      }
+
+      .sec-label {
+        font-size: 11px;
+        letter-spacing: 0.25em;
+        text-transform: uppercase;
+        color: #e76f51;
+        margin-bottom: 0.6rem;
+        font-weight: 400;
+      }
+      .sec-title {
+        font-family: "Playfair Display", serif;
+        font-size: 3rem;
+        font-weight: 700;
+        color: #2a1f1a;
+        margin-bottom: 1.5rem;
+        line-height: 1.1;
+      }
+
+      .artwork-desc {
+        font-size: 1.1rem;
+        line-height: 1.9;
+        color: #5a4035;
+        margin-bottom: 2.5rem;
+        font-weight: 300;
+      }
+
+      /* Botón Volver */
+      .btn-back {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        padding: 12px 28px;
+        border: 2px solid #e76f51;
+        color: #e76f51;
+        text-decoration: none;
+        font-size: 13px;
+        letter-spacing: 0.15em;
+        text-transform: uppercase;
+        border-radius: 40px;
+        transition: all 0.3s;
+      }
+
+      .btn-back:hover {
+        background: #e76f51;
+        color: #fff;
+      }
+
+      footer {
+        background: #2a1f1a;
+        color: #a08070;
+        text-align: center;
+        padding: 2rem;
+        font-size: 12px;
+        letter-spacing: 0.08em;
+        margin-top: 4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="blob blob-det"></div>
+
+    <main class="detail-container">
+      <!-- Imagen de la obra -->
+      <div class="artwork-frame">
+        <img src="imagenes/obras 2.jpg" alt="Amanecer cálido" />
+      </div>
+
+      <!-- Información de la obra -->
+      <div class="artwork-info">
+        <p class="sec-label">Obra Original · 2026</p>
+        <h1 class="sec-title">Amanecer cálido</h1>
+        <div class="artwork-desc">
+          <p>
+            Esta pieza explora la transición de la luz durante las primeras
+            horas del día. A través de una paleta de naranjas vibrantes y
+            pinceladas audaces, busca capturar la energía renovadora de un nuevo
+            comienzo.
+          </p>
+          <br />
+          <p>
+            <strong>Técnica:</strong> Acrílico sobre lienzo<br />
+            <strong>Dimensiones:</strong> 80 x 100 cm
+          </p>
+        </div>
+
+        <!-- Botón para volver -->
+        <a href="index.html" class="btn-back"> ← Volver a la galería </a>
+      </div>
+    </main>
+
+    <footer>
+      <p>hecho con color y alma · <span>yeimyrose_arts</span> © 2026</p>
+    </footer>
+  </body>
+</html>
